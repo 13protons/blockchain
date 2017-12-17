@@ -56,5 +56,5 @@ function list(offset, items) {
 }
 
 function hashIsValid(hash) {
-  return hash.startsWith('0000'); // Difficulty
+  return hash.substring(0, 4) === '0000'; // Difficulty
 }
